@@ -5,14 +5,9 @@ public class Player1 extends Player {
 //    Имеет только 1 песню (нельзя объявить эту переменную в классе этого плеера)
 //    playSong Может проиграть песню.
 
-    private final double price = 10.0;
 
-    public double getPrice() {
-        return price;
-    }
-
-    public Player1() {
-        playlist = new String[] {playlist[0]};
+    public Player1(double PRICE) {
+        super(PRICE);
     }
 
 }
