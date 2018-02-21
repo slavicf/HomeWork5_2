@@ -1,7 +1,4 @@
-import players.Player1;
-import players.Player2;
-import players.Player3;
-import players.Player4;
+import players.*;
 
 public class Main {
 
@@ -24,6 +21,18 @@ public class Main {
         System.out.println("\nPlayer4, price: " + player4.getPrice());
         player4.playSong();
         player4.playAllSongs();
+
+        Player5 player5 = new Player5(17.0);
+        System.out.println("\nPlayer5, price: " + player5.getPrice());
+        player5.playSong();
+        player5.playAllSongs();
+
+        Player6 player6 = new Player6(25.0);
+        System.out.println("\nPlayer6, price: " + player6.getPrice());
+        player6.playSong();
+        player6.playAllSongs();
+        player6.shuffle();
+        player6.playAllSongs();
 
     }
 
