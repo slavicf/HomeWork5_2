@@ -16,12 +16,18 @@ public class Player6 extends Player3 {
     }
 
     public void shuffle() {
-        for (int i = this.playlist.length - 1; i > 0; i--)
-        {
-            int index = rnd.nextInt(i + 1);
-            String a = this.playlist[index];
-            this.playlist[index] = this.playlist[i];
-            this.playlist[i] = a;
+//        for (int i = this.playlist.length - 1; i > 0; i--)
+//        {
+//            int index = rnd.nextInt(i + 1);
+//            String a = this.playlist[index];
+//            this.playlist[index] = this.playlist[i];
+//            this.playlist[i] = a;
+//        }
+        for (int i = 0; i < playlist.length; i++) {
+            int random = rnd.nextInt(playlist.length);
+            String temp = playlist[i];
+            playlist[i] = playlist[random];
+            playlist[random] = temp;
         }
     }
 }
